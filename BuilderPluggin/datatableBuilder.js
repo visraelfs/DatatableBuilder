@@ -15,7 +15,7 @@ class DatatableBuilder{
         this.datatable = $(this.elementoTabla).DataTable(this.jsonDatatable);
 
         this.datatable.columns.adjust().draw();
-    }
+    }   
 
     AgregarFila(Arreglo){        
         this.datatable.row.add(Arreglo).columns.adjust().draw();   

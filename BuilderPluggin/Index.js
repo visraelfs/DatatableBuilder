@@ -11,8 +11,23 @@ function inicializaTabla1(){
     tabla.jsonDatatable.buttons = botones.Botones;
     botones.AgregarBoton(botones.TiposBotones.PDF,"Boton PDF", "Haga clic para descargar PDF", "btn btn-primary","", "PDF EJemplo",botones.OrientacionPDF.landscape, botones.TamanioPaginaPDF.LEGAL)        
     tabla.InicializaTabla();
-
     tabla.AgregarFila(["<input type = 'text' value ='Victor'/>", "Flores", "<label><input type='Checkbox'> Check</label>"])
+
+    
+ 
+    $('#tabla1 tbody').on( 'click', 'tr', function () {
+        if ( $(this).hasClass('selected') ) {
+            $(this).removeClass('selected');
+        }
+        else {
+            tabla.datatable.$('tr.selected').removeClass('selected');
+            $(this).addClass('selected');
+        }
+    } );
+ 
+    $('#boton').click( function () {
+        tabla.datatable.row('.selected').remove().draw( false );
+    } );
 }
 
 
