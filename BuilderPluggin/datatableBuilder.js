@@ -36,8 +36,7 @@ class DataTableBotones
         this.Botones = []
     }    
     
-    AgregarBoton(tipoBoton,texto,titulo,classNames,columnasExportar,nombreArchivo,orientacion,tamanioPaginaPDF){
-
+    AgregarBoton(tipoBoton,texto,titulo,classNames,columnasExportar,nombreArchivo,orientacion,tamanioPaginaPDF){       
         let boton = {};
 
         switch(tipoBoton){
@@ -51,7 +50,7 @@ class DataTableBotones
                 boton.init = function (api, node, config) {
                     $(node).removeClass('dt-button')
                 };
-                boton.classNames = classNames
+                boton.className = classNames
                 break;
 
             case 2:
@@ -65,7 +64,7 @@ class DataTableBotones
                 boton.init = function (api, node, config) {
                     $(node).removeClass('dt-button')
                 };
-                boton.classNames = classNames;
+                boton.className = classNames;
                 boton.orientation = orientacion;
                 boton.pageSize = tamanioPaginaPDF;
                 boton.filename = nombreArchivo;
@@ -100,7 +99,7 @@ class DataTableBotones
                 boton.init = function (api, node, config) {
                     $(node).removeClass('dt-button')
                 };
-                boton.classNames = classNames;
+                boton.className = classNames;
                 boton.filename = nombreArchivo;                
             break;
             case 3:
@@ -113,7 +112,7 @@ class DataTableBotones
                 boton.init = function (api, node, config) {
                     $(node).removeClass('dt-button')
                 };
-                boton.classNames = classNames;
+                boton.className = classNames;
                 boton.filename = nombreArchivo;                
             break;
         }

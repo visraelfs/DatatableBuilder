@@ -7,7 +7,7 @@ function inicializaTabla1(){
 
     tabla = new DatatableBuilder("tabla1");
     let botones = new DataTableBotones();
-    tabla.jsonDatatable.dom = "Bt"
+    tabla.jsonDatatable.dom = "<'row'<'col-sm-4'l><'col-sm-4'B><'col-sm-4'f>>tip"
     tabla.jsonDatatable.buttons = botones.Botones;
     botones.AgregarBoton(botones.TiposBotones.PDF,"Boton PDF", "Haga clic para descargar PDF", "btn btn-primary","", "PDF EJemplo",botones.OrientacionPDF.landscape, botones.TamanioPaginaPDF.LEGAL)        
     tabla.InicializaTabla();
