@@ -16,7 +16,6 @@ function inicializaTabla1(){
 }
 
 
-function inicializaTabla2(){
-    debugger;
+function AgregarOtraFila(){    
     tabla.datatable.row.add(["Karen","Barrera",32]).draw();    
 }
