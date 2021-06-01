@@ -11,7 +11,7 @@ function inicializaTabla1(){
     tabla.jsonDatatable.buttons = botones.Botones;
     botones.AgregarBoton(botones.TiposBotones.PDF,"Boton PDF", "Haga clic para descargar PDF", "btn btn-primary","", "PDF EJemplo",botones.OrientacionPDF.landscape, botones.TamanioPaginaPDF.LEGAL)        
     tabla.InicializaTabla();
-    tabla.AgregarFila(["<input type = 'text' value ='Victor'/>", "Flores", "<label><input type='Checkbox'> Check</label>"])
+    tabla.AgregarFila(["<input type = 'text' value ='Victor'/>", "Flores", "<label><input type='Checkbox'> Check</label>","FOSV890314V49","CDMX"])
 
     
  
@@ -32,5 +32,5 @@ function inicializaTabla1(){
 
 
 function AgregarOtraFila(){    
-    tabla.datatable.row.add(["Karen","Barrera",32]).draw();    
+    tabla.datatable.row.add(["Karen","Barrera",32,"BACK890317MU8","GUE"]).draw();    
 }
